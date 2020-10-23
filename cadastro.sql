@@ -3,7 +3,7 @@ create database fullstackeletro;
 create table fullstackeletro.produtos (
 
     id int not null primary key auto_increment,
-	categoria varchar (30), 
+    categoria varchar (30), 
     imagem varchar (50) not null unique,
     descricao varchar(100) not null,
     preco float, 
@@ -30,7 +30,7 @@ create table fullstackeletro.clientes (
 
     id int not null primary key auto_increment,
     nome varchar(50) not null,
-	telefone char (11) not null unique,
+    telefone char (11) not null unique,
     cpf char(14) not null unique,
     endereco varchar(50),
     estado varchar(20) default 'São Paulo'
@@ -39,7 +39,7 @@ create table fullstackeletro.clientes (
 
 insert into clientes (id, nome, telefone, cpf, endereco, estado)
 	values 	(default, 'Marina Silva', '59963250915', '323.678.920-40', 'Rua Que a Luz Ilumina', 'Amapá'),
-			(default, 'Chica da Silvia', '87906062543', '455.382.110-96', 'Rua Cuidado que é Larva','Salvador'),
+		(default, 'Chica da Silvia', '87906062543', '455.382.110-96', 'Rua Cuidado que é Larva','Salvador'),
         	(default,'Claúdio Antunes', '11922913025', '298.465.040-98', 'Rua da Alegria', default),
         	(default, 'Sebastião Rocha', '1194286-1817', '454.715.850-97', 'Rua Antonino Freitas', default),
        		(default,'Claudia Raia', '61970616393', '150.531.130-68', 'Rua Margem da Esperança', 'Maranhão'), 
