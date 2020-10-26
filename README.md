@@ -1,5 +1,6 @@
 <h1 align=center>Projeto MySQL</h1>
 
+<p align=center>
 <a href="https://github.com/SuhMoraes/ProjetoMySQL/blob/ main/LICENSE">
   <img  alt="GitHub license" src="https://img.shields.io/github/license/SuhMoraes/ProjetoMySQL">
 </a> 
@@ -12,7 +13,7 @@
 <a href="https://github.com/SuhMoraes/ProjetoMySQL/issues">
   <img alt="GitHub issues" src="https://img.shields.io/github/issues/SuhMoraes/ProjetoMySQL">
 </a>
-
+</p>
 
 <p><b>Repositório voltado para divulgar o aprendizado sobre Banco de Dados, MYSQL, fornecido pela Recode Pro.</b></p>
 
