@@ -36,7 +36,7 @@
 
 <br>
 
-![Bancos de Dados](https://github.com/SuhMoraes/ProjectSQL/blob/main/recodePro_bootcamp/dropdatabase.gif)
+<img src="https://github.com/SuhMoraes/ProjectSQL/blob/main/recodePro_bootcamp/dropdatabase.gif" />
 
 
 
