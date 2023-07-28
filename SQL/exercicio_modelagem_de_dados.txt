@@ -22,7 +22,7 @@ Vamo separar cada ideia:
 As informações comuns armazenadas dos picolés são: sabor, ingredientes, preço e tipo da embalagem.  
 Especificamente,picolés normais possuem um conjunto de aditivos nutritivos (vitaminas ou sais minerais)cada um com nome e fórmula química; 
 
-Entidaes:
+Entidades:
  - Picoles (ID, id Sabor, preço, id tipo da embalagem);
  - Tipos de Picole (Id, nome)
  - Tipo de embalagem (id, nome)
