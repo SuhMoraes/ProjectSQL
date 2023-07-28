@@ -1,0 +1,64 @@
+Exercício Modelagem de Dados
+
+Uma empresa fabricante de picolés deseja armazenar informações acerca de seus negócios.
+Os picolés fabricados são divididos em normal (com água) e ao leite. As informações comuns armazenadas dos picolés são: sabor, ingredientes, preço e tipo da embalagem.  
+Especificamente,picolés normais possuem um conjunto de aditivos nutritivos (vitaminas ou sais minerais)cada um com nome e fórmula química; e picolés ao leite contêm um
+ conjunto de conservantes,cada um com nome e descrição. Os dois tipos de picolés são vendidos em lotes exclusivos(ou normais,ou ao leite) para os revendedores e cada venda
+  gera uma nota fiscal que pode conter um ou vários lotes. As notas fiscais possuem data, valor, número de série e descrição. Todo revendedor possui uma pessoa de contato para eventuais resoluções de problemas, 
+  além disso, armazena-sedo revendedor o CNPJ e a razão social. Deseja-se obter relatórios sobre as vendas mensais dos picolés de cada tipo e quais revendedores compraram mais picolés nos últimos meses.
+
+=====================================================================================================================================================================================================================
+O que precisamos fazer?
+
+1- Encontrar as entidades.
+2 - Definir os atributos.
+3 - Definir os relacionamentos.
+
+======================================================================================================================================================================================================================
+
+Vamo separar cada ideia:
+
+[1] Os picolés fabricados são divididos em normal (com água) e ao leite. 
+As informações comuns armazenadas dos picolés são: sabor, ingredientes, preço e tipo da embalagem.  
+Especificamente,picolés normais possuem um conjunto de aditivos nutritivos (vitaminas ou sais minerais)cada um com nome e fórmula química; 
+
+Entidaes:
+ - Picoles (ID, id Sabor, preço, id tipo da embalagem);
+ - Tipos de Picole (Id, nome)
+ - Tipo de embalagem (id, nome)
+ - Ingredientes  (id, nome)
+ - Ingredientes Picole (id, id_ingrediente, nome)
+ - Sabor (id, nome);
+
+ OBS: um picole pode ter vários ingredientes.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+[2] e picolés ao leite contêm um conjunto de conservantes,cada um com nome e descrição.
+
+Entidades:
+ - Aditivos Nutritivos (id, nome, fórmula química);
+ - Conservantes (id, nome, descricao);
+ - Aditivos Nutritivos Picole (id, id aditivo nutritivo, id picole)
+ - Conservantes Picole (id, id conversante, id picole);
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+[3] Os dois tipos de picolés são vendidos em lotes exclusivos(ou normais,ou ao leite) para os revendedores e cada venda gera uma nota fiscal que 
+pode conter um ou vários lotes.  As notas fiscais possuem data, valor, número de série e descrição.
+
+Entidades:
+- Lotes (id, id tipo picole, quantidade).
+- Nota fiscal (id, data, valor, numero de série, descricao, id revendedor)
+- Lostes Nota Fiscal (id, id lote, id nota fiscal)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+[5] Todo revendedor possui uma pessoa de contato para eventuais resoluções de problemas,  além disso, armazena-sedo revendedor o CNPJ e a razão social.
+
+Entidades:
+- Revendedor (id,  CNPJ, razão social, contato)
+
+
